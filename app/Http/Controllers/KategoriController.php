@@ -46,7 +46,7 @@ class KategoriController extends Controller
      */
     public function show(kategori $kategori)
     {
-        return view('kategori.show', compact('kategori'));
+        return view('kategori.show', compact('allkategori'));
     }
 
     /**
