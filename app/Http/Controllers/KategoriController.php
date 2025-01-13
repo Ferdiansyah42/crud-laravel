@@ -13,7 +13,7 @@ class KategoriController extends Controller
     public function index()
     {
         $alKategori =  kategori::all();
-        return view('kategori.index', compact('alKategori'));
+        return view('kategori.index', compact('allKategori'));
     }
 
     /**
@@ -46,7 +46,7 @@ class KategoriController extends Controller
      */
     public function show(kategori $kategori)
     {
-        return view('kategori.show', compact('allkategori'));
+        return view('kategori.show', compact('kategori'));
     }
 
     /**
